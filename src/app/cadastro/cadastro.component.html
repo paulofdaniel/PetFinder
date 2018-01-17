@@ -1,0 +1,27 @@
+<!--Início da modal de cadastro-->
+<div id="cadastro" class="row">
+    <div class="voltar">
+        <a [routerLink] = "['']"><img src="assets/img/voltar.png"></a>
+    </div>
+    <div class="modal-personalizada">
+        <div class="formulario">
+            <img src="{{marca}}">
+            <form>
+                <input type=text placeholder="Nome">
+                <input type=text placeholder="E-mail">
+                <input type=password placeholder="Senha">
+                <input type=password placeholder="Confirme a senha">
+                <input type=text placeholder="Telefone">
+                <input class="botao" type="button" value="CADASTRAR">
+            </form>
+            <div class="botao-fb fb-login">
+                <img src="{{logoFacebook}}">
+                <span>CADASTRAR USANDO O FACEBOOK</span>
+            </div>
+        </div>
+        <div class="link-rodape">
+            <a [routerLink] = "['/login']">Já tem cadastro? Entre aqui!</a>
+        </div>
+    </div>
+</div>
+<!--FIM da modal de login-->

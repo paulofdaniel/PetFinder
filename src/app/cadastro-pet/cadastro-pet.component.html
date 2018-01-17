@@ -1,0 +1,77 @@
+<div id="registro" class="row">
+    <div class="voltar">
+        <a [routerLink] = "['']"><img src="assets/img/voltar.png"></a>
+    </div>
+    <div class="modal-personalizada scroll background-registro"><!--background-pet-->
+        <div class="formulario registro-pet">
+            <div class="titulo">Registrar Animal</div>
+            <form>
+                <div class="col-12">
+                    <label>Título*</label>
+                    <input type=text id="titulo">
+                </div>
+                <div class="col-4">
+                    <label>Tipo*</label>
+                    <select>
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                        <option>Pássaro</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <div class="col-8">
+                    <label>Raça*</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label>Descrição*</label>
+                    <textarea placeholder="Informe detalhes sobre o animal..."></textarea>
+                </div>
+                <div class="col-12">
+                    <label>Link da foto</label>
+                    <input type=text placeholder="png ou jpg">
+                </div>
+                <div class="col-3">
+                    <label>CEP</label>
+                    <input type=text placeholder="_____-___">
+                </div>
+                <div class="col-2">
+                    <label>Estado</label>
+                    <select>
+                        <option>MG</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>ES</option>
+                    </select>
+                </div>
+                <div class="col-7">
+                    <label>Cidade</label>
+                    <select>
+                        <option>Belo Horizonte</option>
+                    </select>
+                </div>
+                <div class="col-10">
+                    <label>Rua</label>
+                    <input type=text>
+                </div>
+                <div class="col-2">
+                    <label>Número</label>
+                    <input type=text>
+                </div>
+                <div class="col-4 registro">
+                    <a [routerLink] = "['']"><input class="botao-off" type="button" value="CANCELAR"></a>
+                </div>
+                <div class="col-8 registro">
+                    <input class="botao" type="submit" value="REGISTRAR ANIMAL">
+                </div>
+                <!--<span class="texto-separador">Local</span>-->
+            </form>
+        </div>
+    </div>
+</div>
+<!--FIM da modal de login-->

@@ -1,0 +1,99 @@
+<!--Início da modal de exibir pet-->
+<div id="visualizacao" class="row">
+
+    <div class="voltar">
+        <a [routerLink] = "['']"><img src="assets/img/voltar.png"></a>
+    </div>
+    <div class="modal-personalizada scroll  ver-pet">
+      <div class="visualizacao">
+          <div class="cabecalho">
+          <div class="imagem">
+            <img src="{{animal?.foto}}" onclick="abreModal('.modal-foto')">
+          </div>
+              <div class="titulo">
+                  {{animal?.titulo}}
+              </div>
+          <div class="info-adicional">
+              {{animal?.tipo}}, {{animal?.raca}}.
+          </div>
+          </div>
+          <br>
+          <div class="observacoes">
+              {{animal?.descricao}}
+          </div>
+          <div class="titulo-secao">
+              Visto pela última vez
+          </div>
+          <div class="label">Rua/Av.:<span class="valor">{{animal?.rua}}, {{animal?.numero}}</span></div><br>
+          <div class="label">Bairro:<span class="valor">{{animal?.bairro}}</span></div><br>
+          <div class="label">Cidade:<span class="valor">{{animal?.cidade}}</span></div><br>
+          <div class="label">Estado:<span class="valor">{{animal?.estado}}</span></div>
+
+          <div class="titulo-secao">
+              Contato
+          </div>
+          <div class="label">Telefone:<span class="valor"> {{animal?.telefone}}</span></div><br>
+          <div class="label">E-mail:<span class="valor"> {{animal?.email}}</span></div><br>
+
+          <a href="#">
+              <div class="botao-fb">
+                  <img src="{{logoFacebook}}">
+                  <span class="texto">COMPARTILHAR</span>
+              </div>
+          </a>
+
+          <div class="data">
+              Adicionado em {{animal?.data}}
+          </div>
+      </div>
+    </div>
+</div>
+<!--FIM da modal de exibir pet-->
+
+
+
+
+<!--Início da visualização
+<div class="visualizacao">
+    <div class="voltar">
+        <a href="#" onclick="volta()"><img src="{{setaVoltar}}"></a>
+    </div>
+    <div class="cabecalho">
+        <img src="{{foto}}" onclick="abreModal('.modal-foto')">
+        <div class="titulo">
+            {{tituloPostagem}}
+        </div>
+    <div class="info-adicional">
+        {{tipo}}, {{raca}}.
+    </div>
+    </div>
+    <br>
+    <div class="observacoes">
+        {{observacoes}}
+    </div>
+    <div class="titulo-secao">
+        Visto pela última vez
+    </div>
+    <div class="label">Rua/Av.:<span class="valor">{{rua}}, {{numero}}</span></div><br>
+    <div class="label">Bairro:<span class="valor">{{bairro}}</span></div><br>
+    <div class="label">Cidade:<span class="valor">{{cidade}}</span></div><br>
+    <div class="label">Estado:<span class="valor">{{estado}}</span></div>
+
+    <div class="titulo-secao">
+        Contato
+    </div>
+    <div class="label">Telefone:<span class="valor"> {{Telefone}}</span></div><br>
+    <div class="label">E-mail:<span class="valor"> {{email}}</span></div><br>
+
+    <a href="#">
+        <div class="botao-fb">
+            <img src="{{logoFacebook}}">
+            <span class="texto">COMPARTILHAR</span>
+        </div>
+    </a>
+
+    <div class="data">
+        Adicionado em {{data}}
+    </div>
+</div>
+<!--FIM da visualização-->

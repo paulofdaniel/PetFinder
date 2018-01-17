@@ -1,0 +1,23 @@
+<!--Item de listagem-->
+<a [routerLink] = "['/pet',animal.id]">
+    <div class="item">
+        <div class="foto">
+            <img src="{{animal.foto}}">
+        </div>
+          <div class="titulo">
+              {{animal.titulo}}
+          </div>
+        <br>
+        <span class="info-adicional">
+            {{animal.tipo}}, {{animal.raca}}.
+        </span>
+        <br>
+        <div class="observacoes">
+            {{animal.descricao}}
+        </div>
+        <span class="data">
+            Adicionado em {{animal.data}}
+        </span>
+    </div>
+</a>
+<!--FIM do Item de listagem-->

@@ -1,0 +1,22 @@
+<!--<div class="busca">
+    <input class="campo" type="text" name="busca" placeholder="Buscar...">
+</div>-->
+
+<!--Início da Listagem-->
+<div class="listagem">
+
+  <div *ngFor="let animal of animais">
+      <mt-animal [animal]="animal"></mt-animal>
+  </div>
+
+    <div class="espaco-botao-novo">
+      <a [routerLink] = "['/cadastropet']">
+        <div class="botao-novo">
+            <div class="mais">+</div>
+        </div>
+      </a>
+    </div>
+
+
+</div>
+<!--FIm da Listagem-->

@@ -1,0 +1,465 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.lista{
+    padding: 0;
+}
+.marca{
+    height: 60px;
+    background-color: #0b96f2;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.20);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.marca img{
+    margin-top: 12px;
+}
+.filtros{
+    height: 40px;
+    background-color: #0b96f2;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.20);
+}
+.filtro{
+    text-align: center;
+    line-height: 36px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Oleo Script', cursive;
+
+
+}
+.filtro .active{
+    border-bottom: 4px solid white;
+}
+.busca{
+    padding: 20px 10px;
+    height: 80px;
+}
+.busca .campo{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding-left: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.10);
+}
+.listagem{
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+.espaco-botao-novo{
+    width: calc(100% - 40px);
+    position: absolute;
+    height: 50px;
+    text-align: right;
+    bottom: 20px;
+
+}
+.botao-novo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0b96f2;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    float: right;
+    bottom:20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.botao-novo:hover{
+    background-color: #0e76bb;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+.item{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+.item .foto{
+    width: 100px;
+    height: 100px;
+    margin-right: 14px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+.item .foto img{
+    height: 100px;
+}
+.item .titulo{
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    float: left;
+    margin-top: -5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 180px;
+}
+.item .info-adicional{
+    font-size: 14px;
+    font-weight: 300;
+    color: #bbb;
+}
+.item .observacoes{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    max-height: 43px;
+    overflow: hidden;
+}
+.item .data{
+    font-size: 12px;
+    color: #bbb;
+    font-weight: 300;
+    font-style: italic;
+}
+.mapa{
+    background-color: #ddd;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.mapa iframe{
+    width: 100%;
+    height: calc(100vh - 5px);
+}
+.modal-pet{
+    background-color: white;
+}
+.visualizacao{
+    width: 400px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+.visualizacao .cabecalho{
+    text-align: center;
+}
+.visualizacao .cabecalho .imagem{
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.20);
+    overflow: hidden;
+}
+.visualizacao .cabecalho .imagem img{
+    width: 400px;
+}
+.visualizacao .titulo{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.visualizacao .info-adicional{
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}
+.visualizacao .observacoes{
+    margin: 0 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+}
+.visualizacao .titulo-secao{
+    margin: 20px 20px 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #666;
+}
+.visualizacao .label{
+    margin-left:10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #999;
+}
+.visualizacao .valor{
+    margin-left:5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+.botao-fb{
+    margin: 30px auto 10px auto;
+    height: 32px;
+    width: 172px;
+    border-radius: 4px;
+    background-color: #3b5998;
+}
+.botao-fb:hover{
+    background-color: #254381;
+}
+.botao-fb img{
+    margin-left: 9px;
+    float: left;
+}
+.visualizacao .botao-fb .texto{
+    margin: 6px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    float: left;
+}
+.visualizacao .data{
+    text-align: center;
+    width:100%;
+    font-size: 13px;
+    font-weight: 300;
+    color: #999;
+    padding-bottom: 7px;
+}
+.ver-pet{
+  padding: 10px 0;
+  height: auto !important;
+}
+.modal-foto{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,100,220,0.9);
+    z-index: 99999;
+}
+.voltar{
+    position: fixed;
+    margin: 15px;
+    z-index: 99999999;
+}
+.imagem-ampliada{
+    width: 100%;
+    line-height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}
+.imagem-ampliada img{
+    width: 90%;
+    max-width: 560px;
+    height: auto;
+}
+.modal-personalizada{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #0B96F2;
+    z-index: 999;
+    /*display: none;*/
+}
+.scroll{
+    position: absolute;
+}
+.background-registro{
+    min-height: 900px;
+    height: 100vh;
+    background-color: #0B96F2;
+}
+.formulario{
+    width: 400px;
+    height: 500px;
+    margin: calc(50vh - 250px) auto;
+    text-align: center;
+}
+.formulario .titulo{
+    font-size: 20px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.formulario input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.formulario select{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.formulario textarea{
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+.formulario img{
+    margin-bottom: 30px;
+}
+.formulario .botao{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #076FB4;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+}
+.container-modal{
+    width: 400px;
+    height: 500px;
+    margin: calc(50vh - 250px) auto;
+    text-align: center;
+}
+.botao-off{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+}
+.botao-off:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: #076FB4;
+}
+.formulario .botao:hover{
+    background-color: #0064A9;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.16);
+}
+.formulario a{
+    color: white;
+}
+.formulario .facebook{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #3B5998;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+.fb-login{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3B5998;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+}
+.fb-login:hover{
+    background-color: #f0f0f0;
+}
+.fb-login span{
+    position: relative;
+    top: 10px;
+}
+.link-rodape{
+    position: fixed;
+    bottom: 12px;
+    width: 100vw;
+    text-align: center;
+}
+.link-rodape a{
+    color: white;
+}
+.link-rodape a:hover{
+    color: white;
+}
+.registro-pet{
+    width: 600px;
+    background-color: #3cabf5;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 60px auto;
+    height: 750px;
+}
+.registro-pet label{
+    color: white;
+}
+.registro{
+    margin-top: 20px;
+}
+.texto-generico{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top:calc(50vh - 30px);
+}
+.texto-generico a{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.perfil-logado{
+    width: 100vw;
+    text-align: right;
+    position: fixed;
+    z-index: 888;
+}
+.box{
+    color: #0B96F2;
+    background-color: white;
+    height: 35px;
+    max-width: 150px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin-top: 10px;
+    margin-right: 25px;
+    float: right;
+}
+.box a{
+    font-weight: 700;
+}
+
+
+.col-2{
+    width: calc((100% / 6) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-3{
+    width: calc((100% / 4) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-4{
+    width: calc((100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-6{
+    width: calc((100% / 2) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-7{
+    width: calc((100% / 12 * 7) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-8{
+    width: calc((100% / 12 * 8) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-10{
+    width: calc((100% / 12 * 10) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.col-12{
+    width: calc(100% - 10px);
+    float: left;
+    margin-left: 10px;
+}

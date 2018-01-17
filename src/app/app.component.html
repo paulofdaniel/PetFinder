@@ -1,0 +1,43 @@
+<div class="container-fluid">
+
+    <div class="perfil-logado">
+        <div class="box">
+            <a [routerLink] = "['/login']">Entrar</a>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+
+
+    <div class="row">
+        <div class="col-sm-5 col-md-4 col-lg-3 lista">
+            <div class="marca">
+                <img src="{{logo}}">
+            </div>
+            <div class="filtros">
+                <div class="row">
+                    <div class="col-sm-12 filtro">
+                        {{slogan}}
+                    </div>
+                    <!--<div class="col-sm-6 filtro">
+                        Encontrados
+                    </div>-->
+                </div>
+            </div>
+
+            <!--Espço da LISTA começa aqui-->
+
+            <mt-listagem></mt-listagem>
+            <!--<mt-visualizacao-pet></mt-visualizacao-pet>-->
+
+            <!--Espço da LISTA TERMINA aqui-->
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9 mapa">
+            <iframe
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCzVfeNtxPHY-JmsV-v53SJACVooCxLl0M&q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+</div>

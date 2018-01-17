@@ -1,0 +1,25 @@
+<!--Início da modal de login-->
+<div id="login" class="row">
+    <div class="voltar">
+        <a [routerLink] = "['']"><img src="assets/img/voltar.png"></a>
+    </div>
+    <div class="modal-personalizada">
+        <div class="formulario">
+            <img src="{{marca}}">
+            <form>
+                <input type=text placeholder="E-mail">
+                <input type=password placeholder="Senha">
+                <input class="botao" type="button" value="ENTRAR">
+            </form>
+            <a href="#">Esqueceu sua senha?</a>
+            <div class="botao-fb fb-login">
+                <img src="{{logoFacebook}}">
+                <span>ENTRAR USANDO O FACEBOOK</span>
+            </div>
+        </div>
+        <div class="link-rodape">
+            <a [routerLink] = "['/cadastro']">Ainda não tem cadastro? Cadastre-se!</a>
+        </div>
+    </div>
+</div>
+<!--FIM da modal de login-->
