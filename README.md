@@ -52,3 +52,14 @@ export class ListagemService{
 }
 ```
 
+## Telas
+
+![Listagem e Mapa](/../master/readme_images/git_01.png?raw=true "Listagem e Mapa")
+
+![Detalhes](/../master/readme_images/git_02.png?raw=true "Detalhes")
+
+![Login](/../master/readme_images/git_03.png?raw=true "Login")
+
+![Cadastro](/../master/readme_images/git_04.png?raw=true "Cadastro")
+
+![Registro de Animal](/../master/readme_images/git_05.png?raw=true "Registro de Animal")
