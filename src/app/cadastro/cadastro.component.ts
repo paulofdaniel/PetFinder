@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CadastroComponent implements OnInit {
 
   marca:string = "assets/img/marca_cadastro.png";
-  logoFacebook:string = "assets/img/fb_login.png;"
+  logoFacebook:string = "assets/img/fb_login.png";
 
   constructor() { }
 
